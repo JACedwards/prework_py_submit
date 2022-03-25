@@ -5,6 +5,7 @@
 #       the hello_user function always ran first before
 #       the imported function did.  Could not solve.
 
+
 #Question 1:  
 #   Write a function to print "hello_USERNAME!"
 #   Function call:  hello_name("")
@@ -91,3 +92,27 @@ def is_consecutive(a_list):
             break 
 
     return(list)               
+
+#Question 1:  
+#   Write a function to print "hello_USERNAME!"
+#   Function call:  hello_name("")
+#   Only way I could get this to work was to use 
+#        an empty string as the argument in the call.
+#        Otherwise, got missing argument error message
+#            when "q" was input.
+
+def hello_name(user_name):
+    
+    """Print "hello_USERNAME" based on user input"""
+    message = f"hello_{user_name.upper()}!"
+    return message
+
+while True:
+    print(f'\nPlease enter "q" when you are finished.')
+    USERNAME = input("What is your name? ")
+    if USERNAME == 'q':
+        print("\nThank you for sharing your name!")
+        break
+
+    complete_message = hello_name(USERNAME)
+    print(f"\n{complete_message}")
