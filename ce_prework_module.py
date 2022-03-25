@@ -1,9 +1,9 @@
 ###Special Note:  
 #       All the functions work when run within their OWN
-#       file. However, when imported each INDIVIDUALLY from the
-#       module (e.g., from ce_functions import hello_name), 
-#       the hello_user function always ran first before
-#       the imported function did.  Could not solve.
+#       file. However, when I imported functions 2-5 INDIVIDUALLY from this
+#       module (e.g., from ce_prework_module import first_odds), 
+#       the hello_name function always ran first before
+#       the (2-5) imported function did.  Could not solve.
 
 
 #Question 1:  
